@@ -15,6 +15,7 @@ body {
 }
 .page {
   padding-left: var(--sidebarWidth);
+  padding-bottom: 2rem;
 }
 .navbar {
   position: fixed;
@@ -40,6 +41,17 @@ body {
   box-sizing: border-box;
   border-right: 1px solid var(--borderColor);
   overflow-y: auto;
+}
+.content {
+  max-width: var(--contentWidth);
+  margin: 0 auto;
+  padding: 2rem 2.5rem
+}
+.content .a:hover {
+  text-decoration: underline;
+}
+.contenet img {
+  max-width: 100%;
 }
 
 a {
@@ -72,11 +84,12 @@ ol {
 strong {
   font-weight: 600;
 }
-.page-title {
+h1 .page-title {
   font-weight: 600;
   line-height: 1.25;
-  font-size: 2.2rem;
+  font-size: 3.052em;
 }
+
 h1,
 h2,
 h3,
@@ -88,51 +101,41 @@ h6 {
 }
 
 h1 {
-  font-size: 2.2rem;
-  padding-left: 2.2rem;
-  margin-left: -2.2rem;
+  font-size: 2.441em;
 }
-h1:hover {
-  background-image: url("hashtag.svg");
-  background-repeat: no-repeat;
-  background-size: 2.2rem;
-  background-position: 0% 90%;
-}
+
 h2 {
-  font-size: 1.65rem;
+  font-size: 1.953em;
   padding-bottom: 0.3rem;
   border-bottom: 1px solid var(--borderColor);
-  padding-left: 2rem;
-  margin-left: -2rem;
 }
-h2:hover {
-  background-image: url("hashtag.svg");
-  background-repeat: no-repeat;
-  background-size: 1.65rem;
-  background-position: 0% 90%;
-}
+
 h3 {
-  font-size: 1.35rem;
-  padding-left: 2rem;
-  margin-left: -2rem;
+  font-size: 1.563em;
 }
-h3:hover {
-  background-image: url("hashtag.svg");
-  background-repeat: no-repeat;
-  background-size: 1.35rem;
-  background-position: 0% 90%;
+
+h4 {
+  font-size: 1.25em;
 }
+
+h5 {
+  font-size: 1em;
+}
+
+h6 {
+  font-size: 0.8em;
+}
+
 h1::before,
 h2::before,
 h3::before,
 h4::before,
 h5::before,
-h6::before,
-.page-title::before {
+h6::before {
   display: block;
   content: " ";
-  height: 70px;
-  margin-top: -70px;
+  height: 2rem;
+  margin-top: -2rem;
   visibility: hidden;
 }
 

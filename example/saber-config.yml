@@ -12,6 +12,10 @@ themeConfig:
   nav: 
     - text: Home
       link: /
+    - text: About
+      link: /about.html
+    - text: Page
+      link: /page.html
   github: askcreative
   heroImage: logo.jpg
   heroTitle: Hello

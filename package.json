@@ -24,11 +24,11 @@
     "saber-plugin-generate-feed": "^0.1.2",
     "saber-plugin-google-analytics": "^0.0.3",
     "saber-plugin-query-posts": "^0.0.7",
-    "svg-to-vue-component": "^0.3.7",
     "vue-compile": "^0.5.3"
   },
   "dependencies": {
-    "prismjs": "^1.16.0"
+    "prismjs": "^1.16.0",
+    "tocbot": "^4.5.1"
   },
   "keywords": [
     "saber",

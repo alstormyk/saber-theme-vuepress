@@ -16,9 +16,12 @@ export default {
   components: {
   },
   props: ['page'],
-  head: function head() {
+  head() {
+    const pageTitle = this.page.attributes.title
     return {
-      title: this.page.attributes.title
+      title: pageTitle ?
+        `${pageTitle} - ${this.$siteConfig.title}` :
+        this.$siteConfig.title
     }
   }
 }
