@@ -1,0 +1,38 @@
+.custom-block .custom-block-title {
+  font-weight: 600;
+  margin-bottom: -0.4rem;
+}
+.custom-block.tip,
+.custom-block.warning,
+.custom-block.danger {
+  padding: 0.1rem 1.5rem;
+  border-left-width: 0.5rem;
+  border-left-style: solid;
+  margin: 1rem 0;
+}
+.custom-block.tip {
+  background-color: #f3f5f7;
+  border-color: #42b983;
+}
+.custom-block.warning {
+  background-color: rgba(255,229,100,0.3);
+  border-color: color(#ffe564 shade(35%));
+  color: color(#ffe564 shade(70%));
+}
+.custom-block.warning .custom-block-title {
+  color: #b29400;
+}
+.custom-block.warning a {
+  color: var(--textColor);
+}
+.custom-block.danger {
+  background-color: #ffe6e6;
+  border-color: color(red shade(20%));
+  color: color(red shade(70%));
+}
+.custom-block.danger .custom-block-title {
+  color: color(red shade(40%));
+}
+.custom-block.danger a {
+  color: var(--textColor);
+}

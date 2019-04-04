@@ -1,0 +1,44 @@
+{
+  "name": "saber-theme-vuepress",
+  "version": "1.0.0",
+  "description": "Vuepress default theme for saber.js.",
+  "repository": "https://github.com/askcreative/saber-theme-vuepress.git",
+  "author": "Amy <amy@askcreative.space>",
+  "license": "MIT",
+  "private": false,
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "vue-compile src -o dist",
+    "prepublishOnly": "yarn build",
+    "dev:example": "saber example",
+    "generate:example": "saber generate example"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.5.0",
+    "postcss-color-mod-function": "^3.0.3",
+    "postcss-preset-env": "^6.6.0",
+    "saber": "^0.3.6",
+    "saber-highlighter-prism": "^0.1.2",
+    "saber-plugin-generate-feed": "^0.1.2",
+    "saber-plugin-google-analytics": "^0.0.3",
+    "saber-plugin-query-posts": "^0.0.7",
+    "svg-to-vue-component": "^0.3.7",
+    "vue-compile": "^0.5.3"
+  },
+  "dependencies": {
+    "prismjs": "^1.16.0"
+  },
+  "keywords": [
+    "saber",
+    "saber-theme",
+    "vuepress",
+    "theme",
+    "egoist",
+    "minimal",
+    "clean",
+    "simple",
+    "askcreative"
+  ]
+}

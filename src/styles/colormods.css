@@ -1,0 +1,13 @@
+:root {
+    /* Text Color */
+    --textColorT10:  color-mod(var(--textColor) tint(10%));
+    --textColorT25:  color-mod(var(--textColor) tint(25%));
+    --textColorT35:  color-mod(var(--textColor) tint(35%));
+    --textColorT40:  color-mod(var(--textColor) tint(40%));
+    /* Accent Color */
+    --accentColorS10:  color-mod(var(--accentColor) shade(10%));
+    --accentColorT10:  color-mod(var(--accentColor) tint(10%));
+    --accentColorS50:  color-mod(var(--accentColor) shade(50%));
+    /* Border Color */
+    --borderColorS10:  color-mod(var(--borderColor) shade(10%));
+}

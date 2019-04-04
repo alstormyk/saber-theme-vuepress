@@ -1,0 +1,28 @@
+theme: ../src
+
+siteConfig:
+  url: https://saberjs.org
+  author: Author of This Site
+  email: author@your-domain.com
+  title: Saber-Vuepress-Theme
+  logo: logo.jpg
+  description: Write an awesome description for your new site here. You can edit this line in saber-config.yml. It will appear in your document head meta (for Google search results) site description.
+
+themeConfig:
+  nav: 
+    - text: Home
+      link: /
+  github: askcreative
+  heroImage: logo.jpg
+  heroTitle: Hello
+  heroDescription: Welcome home
+  actionText: Get Started →
+  actionLink: /about.html
+  features: 
+    - title: Simplicity First
+      details: Minimal setup with markdown-centered project structure helps you focus on writing.
+    - title: Vue-Powered
+      details: Enjoy the dev experience of Vue + webpack use Vue components in markdown and develop custom themes with Vue.
+    - title: Performant
+      details: VuePress generates pre-rendered static HTML for each page and runs as an SPA once a page is loaded.
+  footer: MIT Licensed | Copyright © 2018-present Evan You
