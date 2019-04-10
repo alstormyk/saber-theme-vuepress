@@ -16,6 +16,8 @@ themeConfig:
       link: /about.html
     - text: Page
       link: /page.html
+    - text: Blog
+      link: /blog.html
   github: askcreative
   heroImage: logo.jpg
   heroTitle: Hello
@@ -30,3 +32,15 @@ themeConfig:
     - title: Performant
       details: VuePress generates pre-rendered static HTML for each page and runs as an SPA once a page is loaded.
   footer: MIT Licensed | Copyright © 2018-present Evan You
+
+markdown:
+  highlighter: prism
+  plugins:
+    - resolve: markdown-it-div
+    - resolve: markdown-it-emoji
+
+plugins:
+  - resolve: saber-plugin-query-posts
+  - resolve: saber-plugin-generate-feed
+    options: 
+      atomFeed: true

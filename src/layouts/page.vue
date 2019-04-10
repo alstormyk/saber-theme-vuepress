@@ -1,7 +1,7 @@
 <template>  
   <div class="layout">
-      <NavBar />
-      <SideBar />
+    <Header/>
+    <SideBar />
     <div class="page">
       <div class="content">
         <div class="js-toc-content toc">
@@ -11,24 +11,36 @@
             <slot name="default" />
           </div>
         </main>
-        <div class="js-toc toc"></div>
         </div>
+      </div>
+      <div class="pagination" v-if="page.pagination && (page.pagination.hasNext || page.pagination.hasPrev)">
+        <router-link
+          class="prev-link"
+          :to="page.pagination.prevLink"
+          v-if="page.pagination.hasPrev"
+        >← Previous
+        </router-link>
+        <router-link
+          class="next-link"
+          :to="page.pagination.nextLink"
+          v-if="page.pagination.hasNext"
+        >Next →
+        </router-link>
       </div>
     </div>
   </div>
 </template>
 
 <script>
-import NavBar from '../components/NavBar.vue'
+import Header from '../components/Header.vue'
 import SideBar from '../components/SideBar.vue'
 
 export default {
     components: {
-      NavBar,
+      Header,
       SideBar
   },
   props: ['page'],
-  
   head() {
     const pageTitle = this.page.attributes.title
     return {

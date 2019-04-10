@@ -1,22 +1,22 @@
-<template>  
+<template>
   <div class="layout">
-    <NavBar />  
+    <Header />
     <div class="home">
       <div class="hero">
         <img v-if="$themeConfig.heroImage" :src="$themeConfig.heroImage" alt="hero" />
         <h1> {{ $themeConfig.heroTitle}} </h1>
-        <p class="description">  {{ $themeConfig.heroDescription }} </p>
+        <p class="description"> {{ $themeConfig.heroDescription }} </p>
         <p class="action" v-if="$themeConfig.actionText && $themeConfig.actionLink">
-          <saber-link class="action-button" :to="$themeConfig.actionLink"> {{ $themeConfig.actionText }} </saber-link> 
+          <saber-link class="action-button" :to="$themeConfig.actionLink"> {{ $themeConfig.actionText }} </saber-link>
         </p>
       </div>
       <div class="features" v-if="$themeConfig.features">
         <div class="feature" v-for="feature in $themeConfig.features" :key="feature">
-            <h2> {{ feature.title }} </h2>
-            <p> {{ feature.details }} </p>
+          <h2> {{ feature.title }} </h2>
+          <p> {{ feature.details }} </p>
         </div>
         <div class="footer" v-if="$themeConfig.footer">
-            {{ $themeConfig.footer }}
+          {{ $themeConfig.footer }}
         </div>
       </div>
     </div>
@@ -24,63 +24,60 @@
 </template>
 
 <script>
-import NavBar from '../components/NavBar.vue'
+import Header from '../components/Header.vue'
 
 export default {
-    components: {
-      NavBar
+  components: {
+    Header
   },
   props: ['page'],
   head() {
     const pageTitle = this.page.attributes.title
     return {
       title: pageTitle ?
-        `${pageTitle} - ${this.$siteConfig.title}` :
-        this.$siteConfig.title
+        `${pageTitle} - ${this.$siteConfig.title}` : this.$siteConfig.title
     }
   }
 }
 </script>
 
 <style scoped>
+/* responsive breakpoints */
+@custom-media --MaxQMobile (width < 719px);
+@custom-media --MaxQMobileNarrow (width < 419px);
+
 .home {
   padding: var(--navbarHeight) 2rem 0;
   max-width: 960px;
   margin: 0px auto;
 }
-
 .hero {
   text-align: center;
 }
-
 img {
   max-height: 280px;
   display: block;
   margin: 3rem auto 1.5rem;
 }
-
 h1 {
   font-size: 3rem;
   background: none;
+  color: var(--textColorT10);
 }
-
 h1:hover {
   background: none;
 }
-
 h1,
 .description,
 .action {
   margin: 1.8rem auto;
 }
-
 .description {
   max-width: 35rem;
   font-size: 1.6rem;
   line-height: 1.3;
   color: var(--textColorT40);
 }
-
 .action-button {
   display: inline-block;
   font-size: 1.2rem;
@@ -92,11 +89,9 @@ h1,
   box-sizing: border-box;
   border-bottom: 1px solid var(--accentColorS10);
 }
-
 .action-button:hover {
   background-color: var(--accentColorT10);
 }
-
 .features {
   border-top: 1px solid var(--borderColor);
   padding: 1.2rem 0;
@@ -107,13 +102,11 @@ h1,
   align-content: stretch;
   justify-content: space-between;
 }
-
 .feature {
   flex-grow: 1;
   flex-basis: 30%;
   max-width: 30%;
 }
-
 h2 {
   font-size: 1.4rem;
   font-weight: 500;
@@ -124,18 +117,16 @@ h2 {
 h2:hover {
   background: none;
 }
-
 p {
   color: var(--textColorT25);
 }
 .footer {
-    padding: 2.5rem;
-    border-top: 1px solid var(--borderColor);
-    text-align: center;
-    color: var(--textColorT25);
+  padding: 2.5rem;
+  border-top: 1px solid var(--borderColor);
+  text-align: center;
+  color: var(--textColorT25);
 }
-
-@media (max-width: var(--MQMobile)) {
+@media (--MaxQMobile) {
   .home .features {
     flex-direction: column;
   }
@@ -144,10 +135,10 @@ p {
     padding: 0 2.5rem;
   }
 }
-@media (max-width: var(--MQMobileNarrow)) {
+@media (--MaxQMobileNarrow) {
   .home {
     padding-left: 1.5rem;
-    padding-right: 1.5rem;
+     padding-right: 1.5rem;
   }
   .home .hero img {
     max-height: 210px;

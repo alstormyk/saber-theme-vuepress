@@ -29,7 +29,7 @@ export default {
   }
 }
 </script>
-<style >
+<style>
 .js-toc {
    padding: 1.5rem 0 0 2rem;
    margin: 0;   
@@ -46,9 +46,15 @@ a.toc-link {
    box-sizing: border-box;
 }
 a.toc-link:hover {
-   color: var(--accentColor);
+color: var(--accentColor);;
+border-left-color: var(--accentColor);
 }
-ol {
+a.toc-link:active {
+   font-weight: 600;
+  color: var(--accentColor);;
+  border-left-color: var(--accentColor);
+}
+ol.toc-list {
    list-style-type: none;
 }
 .js-toc ol.toc-list>li:first-child {
@@ -61,5 +67,4 @@ ol {
    font-size: 1.1em;
    font-weight: 700;
 }
-
 </style>

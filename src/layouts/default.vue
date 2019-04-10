@@ -1,31 +1,35 @@
-<template>  
+<template>
   <div class="layout">
-    <div class="container content">
-      <main>
-      <div class="page-title">{{ page.attributes.title }}</div>
-      <div class="page-content">
-      <slot name="default" />
-      </div>
-    </main>
+    <Header />
+    <SideBar />
+    <div class="content">
+      <main class="main">
+        <slot name="default" />
+        <div class="page-content">
+          <slot name="default" />
+        </div>
+      </main>
     </div>
   </div>
 </template>
 
 <script>
+import Header from '../components/Header.vue'
+import SideBar from '../components/SideBar.vue'
+
 export default {
   components: {
+    Header,
+    SideBar
   },
   props: ['page'],
   head() {
-    const pageTitle = this.page.attributes.title
+    const {
+      title
+    } = this.page.attributes
     return {
-      title: pageTitle ?
-        `${pageTitle} - ${this.$siteConfig.title}` :
-        this.$siteConfig.title
+      title: title ? `${title} - ${this.$siteConfig.title}` : this.$siteConfig.title
     }
   }
 }
 </script>
-
-<style src="prismjs/themes/prism-tomorrow.css"></style>
-<style src="../styles/theme.css"></style>

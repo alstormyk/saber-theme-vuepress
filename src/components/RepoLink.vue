@@ -25,12 +25,14 @@
 import OutboundLink from '../components/OutboundLink.vue';
 export default {
   components: {
-    OutboundLink: OutboundLink
+    OutboundLink
   }
 }
 </script>
 
 <style>
+@custom-media --MaxQMobile (width < 719px);
+
 @import '../styles/config.css';
 
 .repo-link {
@@ -46,5 +48,10 @@ export default {
 .repo-link a color inherit:hover,
 .repo-link a color inherit.router-link-active {
   color: var(--accentColor);
+}
+@media (--MaxQMobile) {
+  .repo-link {
+    margin-left: 0;
+  }
 }
 </style>

@@ -16,19 +16,24 @@
     "generate:example": "saber generate example"
   },
   "devDependencies": {
-    "autoprefixer": "^9.5.0",
-    "postcss-color-mod-function": "^3.0.3",
+    "postcss-custom-media": "^7.0.8",
     "postcss-preset-env": "^6.6.0",
-    "saber": "^0.3.6",
-    "saber-highlighter-prism": "^0.1.2",
+    "saber": "^0.3.7",
     "saber-plugin-generate-feed": "^0.1.2",
     "saber-plugin-google-analytics": "^0.0.3",
     "saber-plugin-query-posts": "^0.0.7",
     "vue-compile": "^0.5.3"
   },
   "dependencies": {
+    "highlight.js": "^9.15.6",
+    "markdown-it-div": "^1.1.0",
+    "markdown-it-emoji": "^1.4.0",
     "prismjs": "^1.16.0",
-    "tocbot": "^4.5.1"
+    "saber-highlighter-prism": "^0.1.2",
+    "tinydate": "^1.0.1",
+    "tocbot": "^4.5.1",
+    "vue-highlight-component": "^1.0.0",
+    "vue-prism-component": "^1.1.1"
   },
   "keywords": [
     "saber",

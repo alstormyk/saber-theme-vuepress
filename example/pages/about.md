@@ -28,6 +28,11 @@ In your `saber-config.yml`:
 theme: minima
 ```
 
+::: tip
+*here be dragons*
+:::
+
+
 This theme is better working with following plugins:
 
 - `saber-plugin-query-posts`: Inject `posts` to homepage's `page` prop, generate tag pages

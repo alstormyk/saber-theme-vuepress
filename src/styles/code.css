@@ -1,178 +1,62 @@
-.content code {
-  color: color(var(--textColor) tint(20%));
-  padding: 0.25rem 0.5rem;
-  margin: 0;
-  font-size: 0.85em;
-  background-color: rgba(27,31,35,0.05);
-  border-radius: 3px;
+/* Tomorrow Night Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+.tomorrow-comment, pre .comment, pre .title {
+  color: #969896;
 }
-.content pre,
-.content pre[class*="language-"] {
-  line-height: 1.4;
-  padding: 1.25rem 1.5rem;
-  margin: 0.85rem 0;
-  background-color: var(--codeBgColor);
-  border-radius: 6px;
-  overflow: auto;
+
+.tomorrow-red, pre .variable, pre .attribute, pre .tag, pre .regexp, pre .ruby .constant, pre .xml .tag .title, pre .xml .pi, pre .xml .doctype, pre .html .doctype, pre .css .id, pre .css .class, pre .css .pseudo {
+  color: #cc6666;
 }
-.content pre code,
-.content pre[class*="language-"] code {
-  color: #fff;
-  padding: 0;
-  background-color: transparent;
-  border-radius: 0;
+
+.tomorrow-orange, pre .number, pre .preprocessor, pre .built_in, pre .literal, pre .params, pre .constant {
+  color: #de935f;
 }
-div[class*="language-"] {
-  position: relative;
-  background-color: #282c34;
-  border-radius: 6px;
+
+.tomorrow-yellow, pre .class, pre .ruby .class .title, pre .css .rules .attribute {
+  color: #f0c674;
 }
-div[class*="language-"] .highlight-lines {
-  user-select: none;
-  padding-top: 1.3rem;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  line-height: 1.4;
+
+.tomorrow-green, pre .string, pre .value, pre .inheritance, pre .header, pre .ruby .symbol, pre .xml .cdata {
+  color: #b5bd68;
 }
-div[class*="language-"] .highlight-lines .highlighted {
-  background-color: rgba(0,0,0,0.66);
+
+.tomorrow-aqua, pre .css .hexcolor {
+  color: #8abeb7;
 }
-div[class*="language-"] pre,
-div[class*="language-"] pre[class*="language-"] {
-  background: transparent;
-  position: relative;
-  z-index: 1;
+
+.tomorrow-blue, pre .function, pre .python .decorator, pre .python .title, pre .ruby .function .title, pre .ruby .title .keyword, pre .perl .sub, pre .javascript .title, pre .coffeescript .title {
+  color: #81a2be;
 }
-div[class*="language-"]::before {
-  position: absolute;
-  z-index: 3;
-  top: 0.8em;
-  right: 1em;
-  font-size: 0.75rem;
-  color: rgba(255,255,255,0.4);
+
+.tomorrow-purple, pre .keyword, pre .javascript .function {
+  color: #b294bb;
 }
-div[class*="language-"]:not(.line-numbers-mode) .line-numbers-wrapper {
-  display: none;
-}
-div[class*="language-"].line-numbers-mode .highlight-lines .highlighted {
-  position: relative;
-}
-div[class*="language-"].line-numbers-mode .highlight-lines .highlighted:before {
-  content: ' ';
-  position: absolute;
-  z-index: 3;
-  left: 0;
-  top: 0;
+
+pre code {
   display: block;
-  width: var(--lineNumbersWrapperWidth);
-  height: 100%;
-  background-color: rgba(0,0,0,0.66);
+  background: #1d1f21;
+  color: #c5c8c6;
+  font-family: Menlo, Monaco, Consolas, monospace;
+  line-height: 1.5;
+  border: 1px solid transparent;
+  padding: 10px;
 }
-div[class*="language-"].line-numbers-mode pre {
-  padding-left: calc(var(--lineNumbersWrapperWidth) + 1rem );
-  vertical-align: middle;
-}
-div[class*="language-"].line-numbers-mode .line-numbers-wrapper {
-  position: absolute;
-  top: 0;
-  width: var(--lineNumbersWrapperWidth);
-  text-align: center;
-  color: rgba(255,255,255,0.3);
-  padding: 1.25rem 0;
-  line-height: 1.4;
-}
-div[class*="language-"].line-numbers-mode .line-numbers-wrapper br {
-  user-select: none;
-}
-div[class*="language-"].line-numbers-mode .line-numbers-wrapper .line-number {
+
+.saber-highlight {
   position: relative;
-  z-index: 4;
-  user-select: none;
-  font-size: 0.85em;
+  margin: 2rem 0;
+  overflow: hidden;
+  background: #1d1f21;
+  border-radius: 4px;
 }
-div[class*="language-"].line-numbers-mode::after {
-  content: '';
+.saber-highlight::before {
+  content: attr(data-lang);
   position: absolute;
-  z-index: 2;
-  top: 0;
-  left: 0;
-  width: 3.5rem;
-  height: var(--lineNumbersWrapperWidth);
-  border-radius: 6px 0 0 6px;
-  border-right: 1px solid rgba(0,0,0,0.66);
-  background-color: var(--codeBgColor);
-}
-div[class~="language-js"]:before {
-  content: 'js';
-}
-div[class~="language-ts"]:before {
-  content: 'ts';
-}
-div[class~="language-html"]:before {
-  content: 'html';
-}
-div[class~="language-md"]:before {
-  content: 'md';
-}
-div[class~="language-vue"]:before {
-  content: 'vue';
-}
-div[class~="language-css"]:before {
-  content: 'css';
-}
-div[class~="language-sass"]:before {
-  content: 'sass';
-}
-div[class~="language-scss"]:before {
-  content: 'scss';
-}
-div[class~="language-less"]:before {
-  content: 'less';
-}
-div[class~="language-stylus"]:before {
-  content: 'stylus';
-}
-div[class~="language-go"]:before {
-  content: 'go';
-}
-div[class~="language-java"]:before {
-  content: 'java';
-}
-div[class~="language-c"]:before {
-  content: 'c';
-}
-div[class~="language-sh"]:before {
-  content: 'sh';
-}
-div[class~="language-yaml"]:before {
-  content: 'yaml';
-}
-div[class~="language-py"]:before {
-  content: 'py';
-}
-div[class~="language-javascript"]:before {
-  content: "js";
-}
-div[class~="language-typescript"]:before {
-  content: "ts";
-}
-div[class~="language-markup"]:before {
-  content: "html";
-}
-div[class~="language-markdown"]:before {
-  content: "md";
-}
-div[class~="language-json"]:before {
-  content: "json";
-}
-div[class~="language-ruby"]:before {
-  content: "rb";
-}
-div[class~="language-python"]:before {
-  content: "py";
-}
-div[class~="language-bash"]:before {
-  content: "sh";
+  right: 10px;
+  top: 5px;
+  font-size: .75rem;
+  color: #c5c8c6;
+
 }

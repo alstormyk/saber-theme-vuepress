@@ -14,12 +14,14 @@ import RepoLink from '../components/RepoLink.vue'
 
 export default {
   components: {
-    RepoLink: RepoLink
+    RepoLink
   }
 }
 </script>
 
 <style>
+/* responsive breakpoints */
+@custom-media --MaxQMobile (width < 719px);
 
 .nav-links {
   display: inline-block;
@@ -41,21 +43,18 @@ export default {
 .nav-links .nav-item:first-child {
   margin-left: 0;
 }
-@media (max-width: var(--MQMobile)) {
+@media (--MaxQMobile) {
+  .nav-links {
+    display: inline;
+  }
   .nav-links .nav-item,
   .nav-links .repo-link {
+    display: inline;
     margin-left: 0;
   }
-}
-@media (min-width: var(--MQMobile)) {
   .nav-links a:hover,
   .nav-links a.router-link-active {
     color: var(--textColor);
-  }
-  .nav-item > a:not(.external):hover,
-  .nav-item > a:not(.external).router-link-active {
-    margin-bottom: -2px;
-    border-bottom: 2px solid color(var(--accentColor) tint(8%));
   }
 }
 </style>

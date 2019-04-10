@@ -9,14 +9,24 @@
   --navbarHeight: 3.6rem;
   --sidebarWidth: 20rem;
   --contentWidth: 740px;
-  /* responsive breakpoints */
-  --MQNarrow: 959px;
-  --MQMobile: 719px;
-  --MQMobileNarrow: 419px;
   /* code */
   --lineNumbersWrapperWidth: 3.5rem;
   --codeLang: js ts html md vue css sass scss less stylus go java c sh yaml py;
   /* NavBar Padding */
   --navbar-vertical-padding: 0.7rem;
   --navbar-horizontal-padding: 1.5rem;
+  /* Text Color */
+  --textColorT10:  color-mod(var(--textColor) tint(10%));
+  --textColorT25:  color-mod(var(--textColor) tint(25%));
+  --textColorT35:  color-mod(var(--textColor) tint(35%));
+  --textColorT40:  color-mod(var(--textColor) tint(40%));
+  /* Accent Color */
+  --accentColorS10:  color-mod(var(--accentColor) shade(10%));
+  --accentColorT10:  color-mod(var(--accentColor) tint(10%));
+  --accentColorS50:  color-mod(var(--accentColor) shade(50%));
+  /* Border Color */
+  --borderColorS10:  color-mod(var(--borderColor) shade(10%));
 }
+
+
+
