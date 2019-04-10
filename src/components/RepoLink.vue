@@ -37,7 +37,7 @@ export default {
 .repo-link a color inherit.router-link-active {
   color: var(--accentColor);
 }
-@media (--MaxQMobile) {
+@media (max-width: 719px) {
   .repo-link {
     margin-left: 0;
   }

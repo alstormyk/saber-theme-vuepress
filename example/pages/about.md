@@ -10,8 +10,6 @@ layout: page
 
 ## Install
 
-
-
 ```bash
 yarn add saber-theme-vuepress
 ```
@@ -119,6 +117,11 @@ themeConfig:
       details: Details for title three.
   footer: Footer info goes here.
 ```
+
+## Search Box
+
+There is a search box. Search function is not included. 
+
 ## License
 
 MIT.

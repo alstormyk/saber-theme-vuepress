@@ -19,7 +19,7 @@ themeConfig:
     - text: Blog
       link: /blog.html
   repo:
-    - site: github
+    - site: Github
       name: askcreative
   heroImage: logo.jpg
   heroTitle: Hello

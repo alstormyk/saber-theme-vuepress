@@ -10,14 +10,6 @@ export default {
 </script>
 
 <style>
-/* responsive breakpoints */
-@custom-media --MinQNarrow (width > 959px);
-@custom-media --MaxQNarrow (width < 959px);
-@custom-media --MinQMobile (width > 719px);
-@custom-media --MaxQMobile (width < 719px);
-@custom-media --MinQMobileNarrow (width > 419px);
-@custom-media --MaxQMobileNarrow (width < 419px);
-
 .search-box {
   display: inline-block;
   position: relative;
@@ -78,7 +70,7 @@ export default {
 .search-box .suggestion.focused a {
   color: var(--accentColor);
 }
-@media (--MaxQNarrow) {
+@media (max-width: 959px) {
   .search-box input {
     cursor: pointer;
     width: 0;
@@ -91,12 +83,12 @@ export default {
     width: 10rem;
   }
 }
-@media (--MaxQNarrow) and (--MinQMobile) {
+@media (max-width: 959px) and (min-width: 719px) {
   .search-box .suggestions {
     left: 0;
   }
 }
-@media (--MaxQMobile) {
+@media (max-width: 719px) {
   .search-box {
     margin-right: 0;
   }
@@ -107,7 +99,7 @@ export default {
     right: 0;
   }
 }
-@media (--MaxQNarrow) {
+@media (max-width: 419px) {
   .search-box .suggestions {
     width: calc(100vw - 4rem);
   }

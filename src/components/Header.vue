@@ -57,10 +57,6 @@ export default {
 </script>
 
 <style>
-/* responsive breakpoints */
-@custom-media --MaxQMobile (width < 719px);
-@custom-media --MinQMobile (width > 719px);
-
 .header {
   padding: var(--navbar-vertical-padding) var(--navbar-horizontal-padding);
   line-height: calc(var(--navbarHeight) - 1.4rem );
@@ -162,12 +158,12 @@ export default {
   width: 1.40rem;
   height: 1.40rem;
 }
-@media (--MaxQMobile) {
+@media screen and (max-width: 719px) {
   .nav-links {
     display: none;
   }
 }
-@media (--MinQMobile) {
+@media screen and (min-width: 719px) {
   .nav-toggle {
     display: none;
   }

@@ -20,9 +20,6 @@ export default {
 </script>
 
 <style>
-/* responsive breakpoints */
-@custom-media --MaxQMobile (width < 719px);
-
 .nav-links {
   display: inline-block;
 }
@@ -43,7 +40,7 @@ export default {
 .nav-links .nav-item:first-child {
   margin-left: 0;
 }
-@media (--MaxQMobile) {
+@media (max-width: 719px) {
   .nav-links {
     display: inline;
   }
