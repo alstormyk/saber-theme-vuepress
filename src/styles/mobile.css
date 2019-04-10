@@ -4,15 +4,7 @@
   --mobileSidebarWidth: calc(var(--sidebarWidth) * 0.82);
 }
 
-/* responsive breakpoints */
-@custom-media --MinQNarrow (width > 959px);
-@custom-media --MaxQNarrow (width < 959px);
-@custom-media --MinQMobile (width > 719px);
-@custom-media --MaxQMobile (width < 719px);
-@custom-media --MinQMobileNarrow (width > 419px);
-@custom-media --MaxQMobileNarrow (width < 419px);
-
-@media (--MaxQNarrow) {
+@media (max-width: 959px) {
   .content {
     padding-left: var(--mobileSidebarWidth);
   }
@@ -20,7 +12,7 @@
     padding-left: var(--mobileSidebarWidth);
   }
 }
-@media (--MaxQMobile) {
+@media (max-width: 719px) {
   .page {
     padding-left: 0;
   }
@@ -28,7 +20,7 @@
     padding-top: 0;
   }
 }
-@media (--MaxQMobile) {
+@media (max-width: 419px) {
   h1 {
     font-size: 1.9rem;
   }

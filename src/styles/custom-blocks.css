@@ -1,38 +1,48 @@
-.custom-block .custom-block-title {
-  font-weight: 600;
-  margin-bottom: -0.4rem;
-}
-.custom-block.tip,
-.custom-block.warning,
-.custom-block.danger {
+#tip,
+#warning,
+#danger {
   padding: 0.1rem 1.5rem;
   border-left-width: 0.5rem;
   border-left-style: solid;
   margin: 1rem 0;
 }
-.custom-block.tip {
+#tip {
   background-color: #f3f5f7;
   border-color: #42b983;
 }
-.custom-block.warning {
+#tip em {
+  font-weight: 600;
+  margin-bottom: -0.4rem;
+  text-transform: uppercase;
+  font-style: normal;
+}
+#warning {
   background-color: rgba(255,229,100,0.3);
-  border-color: color(#ffe564 shade(35%));
-  color: color(#ffe564 shade(70%));
+  border-color: color-mod(#ffe564 shade(35%));
+  color: color-mod(#ffe564 shade(70%));
 }
-.custom-block.warning .custom-block-title {
+#warning em {
+  font-weight: 600;
+  margin-bottom: -0.4rem;
   color: #b29400;
+  text-transform: uppercase;
+  font-style: normal;
 }
-.custom-block.warning a {
+#warning a {
   color: var(--textColor);
 }
-.custom-block.danger {
+#danger {
   background-color: #ffe6e6;
-  border-color: color(red shade(20%));
-  color: color(red shade(70%));
+  border-color: color-mod(red shade(20%));
+  color: color-mod(red shade(70%));
 }
-.custom-block.danger .custom-block-title {
-  color: color(red shade(40%));
+#danger em {
+  font-weight: 600;
+  margin-bottom: -0.4rem;
+  color: color-mod(red shade(40%));
+  text-transform: uppercase;
+  font-style: normal;
 }
-.custom-block.danger a {
+#danger a {
   color: var(--textColor);
 }

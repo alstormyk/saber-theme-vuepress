@@ -18,7 +18,7 @@ yarn add saber-theme-vuepress
 
 In your `saber-config.yml`:
 
-```yml
+```yaml
 theme: vuepress
 ```
 
@@ -44,7 +44,24 @@ This block will be translated to HTML as:
 <em>here be dragons</em>
 </div>
 ```
+Vuepress styling is set up for tip, warning, and danger divs.
+
+::: #tip 
+*tip*
+:::
+
+::: #warning
+*warning*
+:::
+
+::: #danger
+*danger*
+:::
+
 - `markdown-it-emoji`
+
+## Table of Contents
+Table of contents is provided by [![TocBot](https://tscanlin.github.io/tocbot)](https://tscanlin.github.io/tocbot). This works with markdown and vue. Heading id's are automatically done in markdown. Heading id's need to be added when using vue.
 
 ## Layouts
 
@@ -58,7 +75,7 @@ This block will be translated to HTML as:
 
 Configure site title, description etc in your `saber-config.yml`:
 
-```yml
+```yaml
 siteConfig:
   url: https://saber-theme-vuepress.netlify.com/
   author: Author of This Site
@@ -74,7 +91,7 @@ siteConfig:
 
 Configure `nav` to show a set of links in header:
 
-```yml
+```yaml
 themeConfig:
   nav: 
     - text: Home

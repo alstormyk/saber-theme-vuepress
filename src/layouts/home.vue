@@ -42,10 +42,6 @@ export default {
 </script>
 
 <style scoped>
-/* responsive breakpoints */
-@custom-media --MaxQMobile (width < 719px);
-@custom-media --MaxQMobileNarrow (width < 419px);
-
 .home {
   padding: var(--navbarHeight) 2rem 0;
   max-width: 960px;
@@ -126,7 +122,7 @@ p {
   text-align: center;
   color: var(--textColorT25);
 }
-@media (--MaxQMobile) {
+@media (max-width: 719px) {
   .home .features {
     flex-direction: column;
   }
@@ -135,7 +131,7 @@ p {
     padding: 0 2.5rem;
   }
 }
-@media (--MaxQMobileNarrow) {
+@media (max-width: 419px) {
   .home {
     padding-left: 1.5rem;
      padding-right: 1.5rem;
