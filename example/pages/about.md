@@ -6,53 +6,53 @@ layout: page
 
 [![npm](https://)](https:)
 
-> A Saber Port of the Default Jekyll Theme: Minima
+> A Saber port of the default Vuepress theme.
 
 ## Install
 
-### This is a 3
 
-#### And a 4
-
-##### 5
-
-###### whatever
 
 ```bash
-yarn add saber-theme-minima
+yarn add saber-theme-vuepress
 ```
 
 In your `saber-config.yml`:
 
 ```yml
-theme: minima
+theme: vuepress
 ```
 
-::: tip
-*here be dragons*
-:::
+## Saber and Markdown Plugins included
 
-
-This theme is better working with following plugins:
+### Saber
 
 - `saber-plugin-query-posts`: Inject `posts` to homepage's `page` prop, generate tag pages
 - `saber-plugin-generate-feed`: Generate JSON feed at `/feed.json`.
 
-```bash
-yarn add saber-plugin-query-posts saber-plugin-generate-feed
-```
+### Markdown
 
-```yml
-plugins:
-  - resolve: saber-plugin-query-posts
-  - resolve: saber-plugin-generate-feed
+- `markdown-it-div`
+With this plugin you can create block divs like:
 ```
+::: #warning
+*here be dragons*
+:::
+```
+This block will be translated to HTML as:
+```html
+<div id="warning">
+<em>here be dragons</em>
+</div>
+```
+- `markdown-it-emoji`
 
 ## Layouts
 
-- `post`: For blog post pages.
-- `page`: For normal pages.
-- `default`: For any other pages like homepage and tag pages.
+- `home`: Setup just like the Vuepress home page. All fields are populated from saber-config.yml.
+- `post`: For individual blog posts.
+- `blog`: A page to show all your posts.
+- `page`: For normal pages with a sidebar.
+- `default`: For any other pages without a sidebar.
 
 ## Site Config
 
@@ -60,10 +60,12 @@ Configure site title, description etc in your `saber-config.yml`:
 
 ```yml
 siteConfig:
-  title: My Site
-  description: About this website..
-  author: My Name
-  email: my@email.com
+  url: https://saber-theme-vuepress.netlify.com/
+  author: Author of This Site
+  email: author@your-domain.com
+  title: Saber-Vuepress-Theme
+  logo: logo.jpg
+  description: Write an awesome description for your new site here. You can edit this line in saber-config.yml. It will appear in your document head meta (for Google search results) site description.
 ```
 
 ## Theme Config
@@ -74,12 +76,32 @@ Configure `nav` to show a set of links in header:
 
 ```yml
 themeConfig:
-  nav:
+  nav: 
     - text: Home
       link: /
     - text: About
       link: /about.html
+    - text: Page
+      link: /page.html
+    - text: Blog
+      link: /blog.html
+  github: askcreative
+  heroImage: logo.jpg
+  heroTitle: Hello
+  heroDescription: Welcome to saber-theme-vuepress
+  actionText: Get Started →
+  actionLink: /about.html
+  features: 
+    - title: Title One
+      details: Details for title one.
+    - title: Saber-Powered
+      details: With Saber, static rendering with Vue.js is easier now than ever. 
+    - title: Title Three
+      details: Details for title three.
+  footer: Footer info goes here.
 ```
+
+Github can be changed to GitLab or BitBucket and a repo link will be added to the end of the menu bar.
 
 ## License
 

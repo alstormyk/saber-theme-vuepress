@@ -1,7 +1,7 @@
 <template>
   <div class="layout">
     <Header />
-    <div class="page">
+    <div class="page-nosidebar">
       <div class="content">
         <div class="main" v-if="page.posts">
           <div class="index-content">
@@ -18,7 +18,7 @@
                   <div class="item-cover" :style="`background-image:url('${post.attributes.cover}')`">
                   </div>
                 </div>
-                <div class="item-excerpt">
+                <div class="item-excerpt" v-html="post.attributes.excerpt">
                   {{ post.attributes.excerpt }}
                 </div>
               </div>
@@ -56,6 +56,7 @@ export default {
   methods: {
     formatDate
   },
+
   head() {
     const pageTitle = this.page.attributes.title
       return {

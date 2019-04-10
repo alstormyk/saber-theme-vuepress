@@ -2,7 +2,7 @@
 layout: post
 title:  So Cute!
 date: 2017-07-01
-excerpt: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mollis est velit, sit amet dignissim massa dignissim non. Integer nec pharetra elit.
+excerpt: Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
 cover: img/kitty200.jpeg
 ---
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mollis est velit, sit amet dignissim massa dignissim non. Integer nec pharetra elit. Donec at ipsum sed lacus consectetur tristique. Sed vitae orci risus. Nulla sodales mi mi, sit amet euismod arcu ornare non. Sed vehicula tellus quis eros ornare, non lobortis mauris ullamcorper. Nam pretium turpis elit, id elementum nibh posuere non.

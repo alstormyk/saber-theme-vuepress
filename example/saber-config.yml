@@ -1,7 +1,7 @@
 theme: ../src
 
 siteConfig:
-  url: https://saberjs.org
+  url: https://saber-theme-vuepress.netlify.com/
   author: Author of This Site
   email: author@your-domain.com
   title: Saber-Vuepress-Theme
@@ -21,17 +21,17 @@ themeConfig:
   github: askcreative
   heroImage: logo.jpg
   heroTitle: Hello
-  heroDescription: Welcome home
+  heroDescription: Welcome to saber-theme-vuepress
   actionText: Get Started →
   actionLink: /about.html
   features: 
-    - title: Simplicity First
-      details: Minimal setup with markdown-centered project structure helps you focus on writing.
-    - title: Vue-Powered
-      details: Enjoy the dev experience of Vue + webpack use Vue components in markdown and develop custom themes with Vue.
-    - title: Performant
-      details: VuePress generates pre-rendered static HTML for each page and runs as an SPA once a page is loaded.
-  footer: MIT Licensed | Copyright © 2018-present Evan You
+    - title: Title One
+      details: Details for title one.
+    - title: Saber-Powered
+      details: With Saber, static rendering with Vue.js is easier now than ever. 
+    - title: Title Three
+      details: Details for title three.
+  footer: Footer info goes here.
 
 markdown:
   highlighter: prism

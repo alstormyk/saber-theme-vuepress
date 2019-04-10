@@ -22,9 +22,11 @@ body {
   font-size: 16px;
   color: var(--textColor);
 }
-
 .page {
   padding-left: var(--sidebarWidth);
+  padding-bottom: 2rem;
+}
+.page-nosidebar {
   padding-bottom: 2rem;
 }
 .navbar {
@@ -38,7 +40,6 @@ body {
   box-sizing: border-box;
   border-bottom: 1px solid var(--borderColor);
 }
-
 .content {
   max-width: var(--contentWidth);
   margin: 0 auto;
@@ -50,7 +51,9 @@ body {
 .contenet img {
   max-width: 100%;
 }
-
+article {
+  margin-bottom: 2px;
+}
 a {
   font-weight: 500;
   color: var(--accentColor);
@@ -171,6 +174,11 @@ td {
 }
 .theme-container {
   display: block;
+}
+.pagination {
+  padding: 1rem;
+  list-style: none;
+  border-top: 1px solid var(--borderColor);
 }
 
 @media (--MinQMobile) {
