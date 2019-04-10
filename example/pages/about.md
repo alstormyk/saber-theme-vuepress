@@ -85,7 +85,9 @@ themeConfig:
       link: /page.html
     - text: Blog
       link: /blog.html
-  github: askcreative
+  repo:
+    - site: github
+      name: askcreative
   heroImage: logo.jpg
   heroTitle: Hello
   heroDescription: Welcome to saber-theme-vuepress
@@ -100,9 +102,6 @@ themeConfig:
       details: Details for title three.
   footer: Footer info goes here.
 ```
-
-Github can be changed to GitLab or BitBucket and a repo link will be added to the end of the menu bar.
-
 ## License
 
 MIT.
