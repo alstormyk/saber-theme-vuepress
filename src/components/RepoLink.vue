@@ -1,24 +1,12 @@
-<template>  
-     <div class="repo-link">
-       <div v-if="$themeConfig.github">
-         <a :href="`https://www.github.com/${themeConfig.github}`" :title="$themeConfig.github">
-         Github
-         <OutboundLink />
-         </a>
-         </div>
-          <div v-if="$themeConfig.gitlab">
-         <a :href="`https://www.gitlab.com/${themeConfig.gitlab}`" :title="$themeConfig.gitlab">
-         GitLab
-         <OutboundLink />
-         </a>
-         </div>
-          <div v-if="$themeConfig.bitbucket">
-         <a :href="`https://www.bitbucket.com/${themeConfig.bitbucket}`" :title="$themeConfig.bitbucket">
-         BitBucket
-         <OutboundLink />
-         </a>
-         </div>
-     </div>
+<template>
+  <div class="repo-link" v-if="$themeConfig.repo">
+    <div class="repo" v-for="repo in $themeConfig.repo" :key="repo" >
+      <a :href="`https://www.${repo.site}.com/${repo.name}`">
+        {{ repo.site }}         
+        <OutboundLink />
+      </a>
+    </div>
+  </div>
 </template>
 
 <script>

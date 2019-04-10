@@ -1,4 +1,4 @@
-<template>
+=<template>
   <div class="layout">
     <Header />
     <div class="home">

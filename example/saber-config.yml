@@ -18,7 +18,9 @@ themeConfig:
       link: /page.html
     - text: Blog
       link: /blog.html
-  github: askcreative
+  repo:
+    - site: github
+      name: askcreative
   heroImage: logo.jpg
   heroTitle: Hello
   heroDescription: Welcome to saber-theme-vuepress
