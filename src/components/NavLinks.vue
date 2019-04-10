@@ -40,4 +40,9 @@ export default {
 .nav-links .nav-item:first-child {
   margin-left: 0;
 }
+@media screen and (max-width: 719px) {
+  .nav-links {
+    display: none;
+  }
+}
 </style>
