@@ -40,18 +40,4 @@ export default {
 .nav-links .nav-item:first-child {
   margin-left: 0;
 }
-@media (max-width: 719px) {
-  .nav-links {
-    display: inline;
-  }
-  .nav-links .nav-item,
-  .nav-links .repo-link {
-    display: inline;
-    margin-left: 0;
-  }
-  .nav-links a:hover,
-  .nav-links a.router-link-active {
-    color: var(--textColor);
-  }
-}
 </style>
