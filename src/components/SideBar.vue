@@ -27,9 +27,9 @@ export default {
   border-right: 1px solid var(--borderColor);
   overflow-y: auto;
 }
-@media (max-width: 959px) {
+@media (max-width: 719px) {
   .sidebar {
-    width: var(--mobileSidebarWidth);
+    display: none;
   }
 }
 </style>
