@@ -25,7 +25,6 @@ theme: vuepress
 ### Saber
 
 - `saber-plugin-query-posts`: Inject `posts` to homepage's `page` prop, generate tag pages
-- `saber-plugin-generate-feed`: Generate JSON feed at `/feed.json`.
 
 ### Markdown
 
