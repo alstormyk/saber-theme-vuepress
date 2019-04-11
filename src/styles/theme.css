@@ -122,6 +122,16 @@ h6::before {
   margin-top: -2rem;
   visibility: hidden;
 }
+h1:focus, 
+h2:focus, 
+h3:focus, 
+h4:focus, 
+h5:focus,
+h6:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
 kbd,
 .line-number {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;

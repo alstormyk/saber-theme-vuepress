@@ -14,27 +14,22 @@ export default {
 }
 </script>
 <style>
-/* responsive breakpoints */
-@custom-media --MaxQMobile (width < 719px);
-@custom-media --MinQMobile (width > 719px);
-
 .sidebar {
   font-size: 15px;
   background-color: #fff;
-  width: 20rem;
+  width: var(--sidebarWidth);
   position: fixed;
-  z-index: 10;
   margin: 0;
-  top: 3.6rem;
+  top: calc(var(--navbarHeight)* 2.1);
   left: 0;
   bottom: 0;
   box-sizing: border-box;
   border-right: 1px solid var(--borderColor);
   overflow-y: auto;
 }
-@media (--MaxQMobile) {
+@media (max-width: 959px) {
   .sidebar {
-    display: none;
+    width: var(--mobileSidebarWidth);
   }
 }
 </style>

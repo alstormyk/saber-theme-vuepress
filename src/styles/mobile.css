@@ -1,9 +1,5 @@
 @import './config.css';
 
-:root {
-  --mobileSidebarWidth: calc(var(--sidebarWidth) * 0.82);
-}
-
 @media (max-width: 959px) {
   .content {
     padding-left: var(--mobileSidebarWidth);
