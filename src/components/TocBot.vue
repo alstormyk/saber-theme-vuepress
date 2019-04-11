@@ -10,8 +10,10 @@ const TOCBOT_OPTIONS = {
     tocSelector: '.js-toc',
     contentSelector: '.js-toc-content',
     headingSelector: 'page-title, h1, h2, h3, h4, h5, h6',
-    includeHtml: true
-}
+    includeHtml: true,
+    onClick: true
+  
+    }
 
 export default {
   mounted () {

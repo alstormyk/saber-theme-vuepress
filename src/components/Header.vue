@@ -4,7 +4,7 @@
       <img class="logo" v-if ="$siteConfig.logo" 
       :src="$siteConfig.logo" 
       :alt="$siteConfig.title">
-      <span ref="siteName" class="site-name" v-if ="$siteConfig.title" :class="{ 'can-hide':$siteConfig.logo }">
+      <span ref="siteName" class="site-name" v-else>
         {{ $siteConfig.title }}
       </span>
     </saber-link>
@@ -148,7 +148,7 @@ export default {
   margin-top: var(--navbarHeight);
   border-radius: 8px;
   background-color: white;
-  border: 1px solid #dadce0;
+  border: 1px solid var(--borderColor);
   background-clip: padding-box;
 }
 .dropdown-menu-svg {

@@ -11,7 +11,7 @@
         </p>
       </div>
       <div class="features" v-if="$themeConfig.features">
-        <div class="feature" v-for="feature in $themeConfig.features" :key="feature">
+        <div class="feature" v-for="(feature, item) in $themeConfig.features" :key="item">
           <h2> {{ feature.title }} </h2>
           <p> {{ feature.details }} </p>
         </div>

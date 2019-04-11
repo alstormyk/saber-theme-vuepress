@@ -1,6 +1,6 @@
 <template>
   <div class="repo-link" v-if="$themeConfig.repo">
-    <div class="repo" v-for="repo in $themeConfig.repo" :key="repo" >
+    <div class="repo" v-for="(repo, index) in $themeConfig.repo" :key="index" >
       <a :href="`https://www.${repo.site}.com/${repo.name}`">
         {{ repo.site }}         
         <OutboundLink />
