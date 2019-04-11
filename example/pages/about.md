@@ -4,7 +4,7 @@ layout: page
 ---
 # saber-theme-vuepress
 
-[![npm](https://)](https:)
+[![npm](https://badgen.net/npm/v/saber-theme-vuepress)](https://npm.im/saber-theme-vuepress) 
 
 > A Saber port of the default Vuepress theme.
 
