@@ -3868,7 +3868,7 @@ postcss-convert-values@^4.0.1:
     postcss "^7.0.0"
     postcss-value-parser "^3.0.0"
 
-postcss-custom-media@^7.0.7, postcss-custom-media@^7.0.8:
+postcss-custom-media@^7.0.7:
   version "7.0.8"
   resolved "https://registry.yarnpkg.com/postcss-custom-media/-/postcss-custom-media-7.0.8.tgz#fffd13ffeffad73621be5f387076a28b00294e0c"
   integrity sha512-c9s5iX0Ge15o00HKbuRuTqNndsJUbaXdiNsksnVH8H4gdc+zbLzr/UasOwNG6CTDpLFekVY4672eWdiiWu2GUg==
@@ -4741,7 +4741,7 @@ saber-utils@^0.1.0:
   resolved "https://registry.yarnpkg.com/saber-utils/-/saber-utils-0.1.0.tgz#4a9b114aad02aa9fab3ec2daeb2b7f5e9f9dff2e"
   integrity sha512-7doIJMmdWG41BlpeC36WbtLzZw/B/Vt2Cds4geIZCPWCyTg4nOKWsVgfQ+502CNqJkOPnz8D+joHb+UcmjaxRg==
 
-saber@^0.4.1:
+saber@^0.4.2:
   version "0.4.2"
   resolved "https://registry.yarnpkg.com/saber/-/saber-0.4.2.tgz#826a8390299fcdb95533406026ef4dcf0a8a5dcc"
   integrity sha512-7hvQS0eN+u311VVNWz2ncKo0LeDhQrTyrmZjftceo5cTJbrvp+6aDPNtYZimgaQuDpn6Y3ObQoxep1oS3ogTIw==
@@ -5315,7 +5315,7 @@ to-regex@^3.0.1, to-regex@^3.0.2:
     regex-not "^1.0.2"
     safe-regex "^1.1.0"
 
-tocbot@^4.5.1:
+tocbot@^4.6.0:
   version "4.6.0"
   resolved "https://registry.yarnpkg.com/tocbot/-/tocbot-4.6.0.tgz#7acada18320822cf3d96c1a78964cbab69f47dd2"
   integrity sha512-FLdd8a39bXFwTMDhxSRr2vgb77OZcOMA+XVBlyRnbyGr4GjYMVuwpiSaOyXG2uIWVudPAZbvDpYn8hmnjPluGg==

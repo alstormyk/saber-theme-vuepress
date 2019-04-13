@@ -1,6 +1,6 @@
 {
   "name": "saber-theme-vuepress",
-  "version": "1.0.1",
+  "version": "1.0.4",
   "description": "Vuepress default theme for saber.js.",
   "repository": "https://github.com/askcreative/saber-theme-vuepress.git",
   "author": "Amy <amy@askcreative.space>",
@@ -16,9 +16,8 @@
     "generate:example": "saber generate example"
   },
   "devDependencies": {
-    "postcss-custom-media": "^7.0.8",
     "postcss-preset-env": "^6.6.0",
-    "saber": "^0.4.1",
+    "saber": "^0.4.2",
     "saber-plugin-query-posts": "^0.1.0",
     "vue-compile": "^0.5.3"
   },
@@ -29,7 +28,7 @@
     "prismjs": "^1.16.0",
     "saber-highlighter-prism": "^0.2.0",
     "tinydate": "^1.0.1",
-    "tocbot": "^4.5.1",
+    "tocbot": "^4.6.0",
     "vue-highlight-component": "^1.0.0",
     "vue-prism-component": "^1.1.1"
   },

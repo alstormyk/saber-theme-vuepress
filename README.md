@@ -16,7 +16,7 @@ In your `saber-config.yml`:
 theme: vuepress
 ```
 
-This theme is better working with following plugins:
+This theme works best with following plugins:
 
 - `saber-plugin-query-posts`: Inject `posts` to homepage's `page` prop, generate tag pages
 
@@ -27,6 +27,12 @@ yarn add saber-plugin-query-posts saber-plugin-generate-feed
 ```yml
 plugins:
   - resolve: saber-plugin-query-posts
+```
+and markdown-it-div
+```yml
+markdown:
+  plugins:
+    - resolve: markdown-it-div
 ```
 
 ## Layouts
