@@ -20,13 +20,15 @@ In your `saber-config.yml`:
 theme: vuepress
 ```
 
-## Saber and Markdown Plugins included
+## Saber and Markdown Plugins
 
 ### Saber
+Add saber-plugin-query-posts blogs
 
-- `saber-plugin-query-posts`: Inject `posts` to homepage's `page` prop, generate tag pages
+- `saber-plugin-query-posts`: Inject `posts` to `blog` page prop, generate tag pages
 
 ### Markdown
+Add markdown-it-div for custom containers.
 
 - `markdown-it-div`
 With this plugin you can create block divs like:
@@ -55,8 +57,6 @@ Vuepress styling is set up for tip, warning, and danger divs.
 *danger*
 :::
 
-- `markdown-it-emoji`
-
 ## Table of Contents
 Table of contents is provided by [![TocBot](https://tscanlin.github.io/tocbot)](https://tscanlin.github.io/tocbot). This works with markdown and vue. Heading id's are automatically done in markdown. Heading id's need to be added when using vue.
 
@@ -67,6 +67,27 @@ Table of contents is provided by [![TocBot](https://tscanlin.github.io/tocbot)](
 - `blog`: A page to show all your posts.
 - `page`: For normal pages with a sidebar.
 - `default`: For any other pages without a sidebar.
+
+## Home Page Configuration
+
+```yml
+---
+layout: home
+heroImage: logo.jpg
+heroTitle: Hello
+heroDescription: Welcome to saber-theme-vuepress
+actionText: Get Started →
+actionLink: /about.html
+features: 
+  - title: Title One
+    details: Details for title one.
+  - title: Saber-Powered
+    details: With Saber, static rendering with Vue.js is easier now than ever. 
+  - title: Title Three
+    details: Details for title three.
+  footer: Footer info goes here.
+---
+```
 
 ## Site Config
 
@@ -102,19 +123,6 @@ themeConfig:
   repo:
     - site: github
       name: askcreative
-  heroImage: logo.jpg
-  heroTitle: Hello
-  heroDescription: Welcome to saber-theme-vuepress
-  actionText: Get Started →
-  actionLink: /about.html
-  features: 
-    - title: Title One
-      details: Details for title one.
-    - title: Saber-Powered
-      details: With Saber, static rendering with Vue.js is easier now than ever. 
-    - title: Title Three
-      details: Details for title three.
-  footer: Footer info goes here.
 ```
 
 ## Search Box

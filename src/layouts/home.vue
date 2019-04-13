@@ -3,20 +3,20 @@
     <Header />
     <div class="home">
       <div class="hero">
-        <img v-if="$themeConfig.heroImage" :src="$themeConfig.heroImage" alt="hero" />
-        <h1> {{ $themeConfig.heroTitle}} </h1>
-        <p class="description"> {{ $themeConfig.heroDescription }} </p>
-        <p class="action" v-if="$themeConfig.actionText && $themeConfig.actionLink">
-          <saber-link class="action-button" :to="$themeConfig.actionLink"> {{ $themeConfig.actionText }} </saber-link>
+        <img v-if="page.attributes.heroImage" :src="page.attributes.heroImage" alt="hero" />
+        <h1> {{ page.attributes.heroTitle}} </h1>
+        <p class="description"> {{ page.attributes.heroDescription }} </p>
+        <p class="action" v-if="page.attributes.actionText && page.attributes.actionLink">
+          <saber-link class="action-button" :to="page.attributes.actionLink"> {{ page.attributes.actionText }} </saber-link>
         </p>
       </div>
-      <div class="features" v-if="$themeConfig.features">
-        <div class="feature" v-for="(feature, item) in $themeConfig.features" :key="item">
+      <div class="features" v-if="page.attributes.features">
+        <div class="feature" v-for="(feature, item) in page.attributes.features" :key="item">
           <h2> {{ feature.title }} </h2>
           <p> {{ feature.details }} </p>
         </div>
-        <div class="footer" v-if="$themeConfig.footer">
-          {{ $themeConfig.footer }}
+        <div class="footer" v-if="page.attributes.footer">
+          {{ page.attributes.footer }}
         </div>
       </div>
     </div>
