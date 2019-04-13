@@ -28,13 +28,18 @@ body {
     padding-left: var(--mobileSmallSidebarWidth);
   }
 }
+@media (max-width: 419px) {
+  .page {
+    padding-left: 0;
+  }
+}
 .page-nosidebar {
   padding-bottom: 2rem;
 }
 .content {
   max-width: var(--contentWidth);
   margin: 0 auto;
-  padding: 2rem 2.5rem
+  padding: 3.5rem 2.5rem
 }
 .content .a:hover {
   text-decoration: underline;
