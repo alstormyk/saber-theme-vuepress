@@ -1,21 +1,5 @@
 @import './config.css';
 
-@media (max-width: 959px) {
-  .content {
-    padding-left: var(--mobileSidebarWidth);
-  }
-  .page {
-    padding-left: var(--mobileSidebarWidth);
-  }
-}
-@media (max-width: 719px) {
-  .page {
-    padding-left: 0;
-  }
-  .theme-container {
-    padding-top: 0;
-  }
-}
 @media (max-width: 419px) {
   h1 {
     font-size: 1.9rem;
@@ -23,5 +7,21 @@
   .content div[class*="language-"] {
     margin: 0.85rem -1.5rem;
     border-radius: 0;
+  }
+}
+@media (min-width: 419px) and (max-width: 600px) {
+  .page {
+    padding-left: var(--mobileSmallSidebarWidth);
+  }
+  .theme-container {
+    padding-top: 0;
+  }
+}
+@media (min-width: 601px) and (max-width: 719px) {
+  .content {
+    padding-left: var(--mobileSidebarWidth);
+  }
+  .page {
+    padding-left: var(--mobileSidebarWidth);
   }
 }

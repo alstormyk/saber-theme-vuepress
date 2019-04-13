@@ -182,10 +182,5 @@ td {
     border-radius: 0;
   }
 }
-@media screen and (max-width: 719px) {
-  .page {
-    padding-left: 0;
-  }
-}
-  
+
 @import './mobile.css';

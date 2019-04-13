@@ -10,9 +10,7 @@ const TOCBOT_OPTIONS = {
     tocSelector: '.js-toc',
     contentSelector: '.js-toc-content',
     headingSelector: 'page-title, h1, h2, h3, h4, h5, h6',
-    includeHtml: true,
-    onClick: true
-  
+    includeHtml: true
     }
 
 export default {
@@ -69,9 +67,17 @@ ol.toc-list {
   font-size: 1.1em;
   font-weight: 700;
 }
-@media (min-width: 719px) and (max-width: 949px) {
+@media (min-width: 600px) and (max-width: 949px) {
   .js-toc {
     padding: 1.5rem 0 0 0;
    }
+}
+@media (max-width: 600px) {
+  .js-toc {
+    padding: 0;
+   }
+  a.toc-link {
+    padding-left: 0;
+  }
 }
 </style>

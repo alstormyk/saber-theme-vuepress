@@ -27,7 +27,18 @@ export default {
   border-right: 1px solid var(--borderColor);
   overflow-y: auto;
 }
-@media (max-width: 719px) {
+@media (max-width: 600px) {
+  .sidebar {
+      font-size: 13px;
+      width: var(--mobileSmallSidebarWidth);
+  }
+}
+@media (min-width: 601px) and (max-width: 719px) {
+  .sidebar {
+      width: var(--mobileSidebarWidth);
+  }
+}
+@media (max-width: 419px) {
   .sidebar {
     display: none;
   }

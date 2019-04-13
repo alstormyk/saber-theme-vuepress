@@ -4,6 +4,9 @@
       <img class="logo" v-if ="$siteConfig.logo" 
       :src="$siteConfig.logo" 
       :alt="$siteConfig.title">
+      <span ref="siteName" class="site-name" v-else-if ="$themeConfig.title">
+        {{ $themeConfig.title }}
+      </span>
       <span ref="siteName" class="site-name" v-else>
         {{ $siteConfig.title }}
       </span>

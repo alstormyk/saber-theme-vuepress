@@ -121,6 +121,13 @@ themeConfig:
 
 There is a search box. Search function is not included. 
 
+To show search box configure theme:
+
+```yaml
+themeConfig:
+  search: true
+```
+
 ## License
 
 MIT.

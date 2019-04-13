@@ -18,6 +18,7 @@ themeConfig:
       link: /page.html
     - text: Blog
       link: /blog.html
+  search:
   repo:
     - site: Github
       name: askcreative
@@ -43,6 +44,3 @@ markdown:
 
 plugins:
   - resolve: saber-plugin-query-posts
-  - resolve: saber-plugin-generate-feed
-    options: 
-      atomFeed: true

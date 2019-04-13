@@ -19,16 +19,17 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .nav-links {
   display: inline-block;
 }
-.nav-links a {
+a,
+a.router-link {
   line-height: 1.4rem;
-  color: inherit;
+  color: var(--textColor);
 }
-.nav-links a:hover,
-.nav-links a.router-link-active {
+a:hover,
+a.router-link-active {
   color: var(--accentColor);
 }
 .nav-links .nav-item {
@@ -37,7 +38,7 @@ export default {
   margin-left: 1.5rem;
   line-height: 2rem;
 }
-.nav-links .nav-item:first-child {
+.nav-item .nav-item:first-child {
   margin-left: 0;
 }
 @media screen and (max-width: 719px) {

@@ -1,5 +1,5 @@
 <template>  
-  <div class="search-box">
+  <div class="search-box" v-if="$themeConfig.search">
     <input>
   </div>
 </template>

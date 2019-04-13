@@ -19,8 +19,6 @@ export default {
 </script>
 
 <style>
-@custom-media --MaxQMobile (width < 719px);
-
 @import '../styles/config.css';
 
 .repo-link {
@@ -30,11 +28,12 @@ export default {
   line-height: 2rem;
   margin-left: 1.5rem;
 }
-.repo-link a {
+.repo a {
+  color: var(--textColor);
   line-height: 1.4rem;
 }
-.repo-link a color inherit:hover,
-.repo-link a color inherit.router-link-active {
+.repo a:hover,
+.repo a.router-link-active {
   color: var(--accentColor);
 }
 @media (max-width: 719px) {

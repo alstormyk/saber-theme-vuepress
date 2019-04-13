@@ -1,25 +1,29 @@
 <template>  
   <nav>
-    <div class="drop-links" >
+    <transition name="dropdown">
+    <div class="drop-links" v-if="show" @click="show = false">
       <div class="drop-item" v-if="$themeConfig.nav">
         <div v-for="(item, index) in $themeConfig.nav" :key="index">
-          <saber-link :to="item.link">{{ item.text }}</saber-link>
+          <saber-link :to="item.link" >{{ item.text }}</saber-link>
         </div>
         <RepoLink />
       </div>
-      <TocBot />
     </div>
+    </transition>
   </nav>
 </template>
 
 <script>
 import RepoLink from '../components/RepoLink.vue'
-import TocBot from '../components/TocBot.vue'
 
 export default {
   components: {
-    RepoLink,
-    TocBot
+    RepoLink
+  },
+    data() {
+    return {
+      show: true
+    }
   }
 }
 </script>
@@ -52,5 +56,15 @@ export default {
 }
 .drop-links .drop-item:first-child {
   margin-left: 0;
+}
+.dropdown-enter-active,
+.dropdown-leave-active {
+  transition: all 1s;
+}
+.dropdown-enter,
+.dropdown-leave-to {
+   opacity: 0;
+  -webkit-transform: translateY(30px);
+  transform: translateY(30px);
 }
 </style>
