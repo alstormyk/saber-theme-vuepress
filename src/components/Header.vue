@@ -11,6 +11,7 @@
         {{ $siteConfig.title }}
       </span>
     </saber-link>
+   
     <a href="#" class="nav-toggle">
       <transition name="slide-fade">
         <button class="toggle-button" v-if="show" key="on"
@@ -61,15 +62,27 @@ export default {
 
 <style>
 .header {
+  top: 0;
+  left: 0;
+  right: 0;
+  position: fixed;
+  z-index: 20;
+  height: var(--navbarHeight);
+  background-color: #fff;
   padding: var(--navbar-vertical-padding) var(--navbar-horizontal-padding);
   line-height: calc(var(--navbarHeight) - 1.4rem );
-  position: relative;
+  box-sizing: border-box;
+  border-bottom: 1px solid var(--borderColor);
 }
 .logo {
   height: calc(var(--navbarHeight) - 1.4rem );
   min-width: calc(var(--navbarHeight) - 1.4rem );
   margin-right: 0.8rem;
   vertical-align: top;
+}
+.nav {
+  padding: var(--navbar-vertical-padding) var(--navbar-horizontal-padding);
+  line-height: calc(var(--navbarHeight) - 1.4rem );
 }
 .site-name {
   font-size: 1.3rem;

@@ -31,7 +31,7 @@ export default {
 </script>
 <style>
 .js-toc {
-  padding: 1.5rem 0 0 2rem;
+  padding: 1.5rem 0;
   margin: 0;   
   color: var(--textColor);
 }
@@ -67,11 +67,7 @@ ol.toc-list {
   font-size: 1.1em;
   font-weight: 700;
 }
-@media (min-width: 600px) and (max-width: 949px) {
-  .js-toc {
-    padding: 1.5rem 0 0 0;
-   }
-}
+
 @media (max-width: 600px) {
   .js-toc {
     padding: 0;

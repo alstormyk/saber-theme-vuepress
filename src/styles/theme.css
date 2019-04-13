@@ -18,19 +18,18 @@ body {
   padding-left: var(--sidebarWidth);
   padding-bottom: 2rem;
 }
+@media (max-width: 719px) {
+  .page {
+    padding-left: var(--mobileSidebarWidth);
+  }
+}
+@media (max-width: 600px) {
+  .page {
+    padding-left: var(--mobileSmallSidebarWidth);
+  }
+}
 .page-nosidebar {
   padding-bottom: 2rem;
-}
-.navbar {
-  position: fixed;
-  z-index: 20;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: var(--navbarHeight);
-  background-color: #fff;
-  box-sizing: border-box;
-  border-bottom: 1px solid var(--borderColor);
 }
 .content {
   max-width: var(--contentWidth);
@@ -165,7 +164,7 @@ td {
 .custom-layout {
   padding-top: 3.6rem;
 }
-.theme-container {
+.layout {
   display: block;
 }
 .pagination {
@@ -182,5 +181,3 @@ td {
     border-radius: 0;
   }
 }
-
-@import './mobile.css';

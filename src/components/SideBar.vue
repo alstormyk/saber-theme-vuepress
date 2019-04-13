@@ -20,9 +20,10 @@ export default {
   width: var(--sidebarWidth);
   position: fixed;
   margin: 0;
-  top: calc(var(--navbarHeight)* 2.1);
+  top: 0;
   left: 0;
   bottom: 0;
+  padding-top: calc(var(--navbarHeight)* 2.1);
   box-sizing: border-box;
   border-right: 1px solid var(--borderColor);
   overflow-y: auto;
