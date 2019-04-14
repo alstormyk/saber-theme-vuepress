@@ -28,9 +28,11 @@ a.router-link {
   line-height: 1.4rem;
   color: var(--textColor);
 }
-a:hover,
-a.router-link-active {
+a:hover {
   color: var(--accentColor);
+}
+a.router-link-exact-active {
+  border-bottom: 2px solid var(--accentColor);
 }
 .nav-links .nav-item {
   position: relative;
